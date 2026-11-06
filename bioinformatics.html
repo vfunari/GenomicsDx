@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bioinformatics | GenomicsDx</title>
+  <link rel="stylesheet" href="./site.css">
+  <link rel="stylesheet" href="./capabilities.css">
+</head>
+<body class="capability-page">
+  <div class="capability-shell">
+    <nav class="capability-nav" aria-label="Capabilities">
+      <a href="./index.html#services">GenomicsDx home</a><a href="./regulatory.html">Regulatory</a><a href="./ai-ml.html">AI &amp; ML</a><a href="./bioinformatics.html" aria-current="page">Bioinformatics</a><a href="./statistics.html">Statistics</a>
+    </nav>
+    <main>
+      <header class="capability-intro"><h1>Bioinformatics</h1>
+  
+    
+    <p class="sub">From raw sequence to a clinical report a physician can act on</p>
+    <p class="intro">Hands-on pipeline engineering, benchmarking and interpretation, built to run under CAP, CLIA and FDA expectations. I have built regulated bioinformatics functions from scratch and still work in the data.</p>
+  </header>
+      <div class="capability-grid">
+
+  <div class="block">
+    <h2>Featured: RNA fusion probe design algorithm</h2>
+    <ul>
+      <li>Senior author on an algorithm that converts the genomic breakpoints of known fusions into RNA breakpoints and probe sequences.</li>
+      <li>It scores candidate isoforms on database presence, review status, MANE, LRG and CCDS membership, transcript support level, and sequence identity with hg38, then keeps the top-scoring 5′ and 3′ pair.</li>
+      <li>Targeted capture sets for 524 and 1,632 known fusions gave 5- to 20-fold more supporting reads than whole-exome sequencing in a 12-fusion SeraSeq control, and 10- to 30-fold more in 10 clinical samples with fusions confirmed by orthogonal methods.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Sequence analysis and pipelines</h2>
+    <ul>
+      <li>Developed proprietary bioinformatics pipelines and high-sensitivity tumor-only variant callers, and installed and maintained the servers that run them.</li>
+      <li>Launched a new assay and pipeline on Element Biosciences sequencing, using hap.py benchmarking to trace false positives to the pipeline, polymerase and sequencing artifacts across two laboratories.</li>
+      <li>Benchmarked NGS variant pipelines against GIAB truth sets (HG002, HG003, HG004 trio), covering variant concordance, sequencing artifact profiling and Mendelian inheritance analysis, with custom Python workflows for VCF and BED intersection.</li>
+      <li>Launched UMI deduplication on NovaSeq and validated NovaSeq v1.5 chemistry, cutting sequencing cost by 30%.</li>
+      <li><strong>Nanopore MRD program in Canada:</strong> oversaw MRD lung cancer trials that used Nanopore long-read sequencing for methylome profiling and CNV and structural variant detection, with data operations and interpretation coordinated across sites.</li>
+      <li>Launched a multimodal heme genomic profiling assay that reads DNA and RNA from total nucleic acid in a single tube, covering SNVs, indels, CNVs, gene fusions including BCR::ABL1, and RNA expression.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Genomic data integration</h2>
+    <ul>
+      <li>Integrated bioinformatics with LIMS and data systems for automated QC release across assays.</li>
+      <li>Delivered cloud-based pipelines with LIMS integration and digital QC release for a decentralized laboratory network.</li>
+      <li>Brought 21 CFR Part 11 compliance to bioinformatics and reporting for FDA and pharma work.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Expression profiling</h2>
+    <ul>
+      <li>Analyzed gene expression for more than 700 samples in a MASH and cholesterol metabolism drug study, setting QC cutoffs, assessing outliers and validating findings.</li>
+      <li>Reviewed a newly developed RNA-Seq gene fusion test covering MET exon 14 and EGFRvIII skipping events, and engineered new bioinformatics programs to identify fusion probes.</li>
+      <li>Built a single-cell and ultra-low-input expression pipeline from extraction through library prep, sequencing and analysis.</li>
+      <li>Showed that RNA-seq CCND1 expression from total nucleic acid can stand in for t(11;14) FISH in multiple myeloma, with an AUC of 0.87 and 75 to 81% sensitivity and 97 to 100% specificity depending on the cutoff method.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Genomic Pattern and Signature Discovery</h2>
+    <ul>
+      <li>Led a national effort to standardize tumor mutation burden for immunotherapy decisions.</li>
+      <li>Found mutations tied to stem cell differentiation by deep exome sequencing, and miRNAs and genes tied to corneal and T-cell development.</li>
+      <li>Profiled exosomal RNA expression in prostate cancer against normal samples.</li>
+      <li>Published disease-gene discoveries in Nature Genetics, the American Journal of Human Genetics and the New England Journal of Medicine.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Variant interpretation and clinical reporting</h2>
+    <ul>
+      <li>Co-designed SiVA, the variant annotation and curation pipeline and database used for clinical and research NGS.</li>
+      <li>Built regulated bioinformatics functions under CLIA and FDA expectations, with pipeline validation and quality standards.</li>
+      <li>Integrated digital reporting for clinicians into urine-based RNA/DNA liquid biopsy launches.</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Pipeline orchestration and computing</h2>
+    <ul>
+      <li><strong>Workflows and infrastructure:</strong> Nextflow, nf-core/rnaseq, nf-core/sarek, Docker containers, Kubernetes, AWS, and AWS HealthOmics.</li>
+      <li><strong>Python:</strong> pandas and Anaconda for environment management.</li>
+      <li><strong>R/Bioconductor core:</strong> GenomicRanges, SummarizedExperiment, VariantAnnotation, maftools, and biomaRt.</li>
+    </ul>
+  </div>
+  <div class="block">
+    <h2>Sequencing data and variant calling</h2>
+    <ul>
+      <li><strong>QC and preprocessing:</strong> BCL Convert, FastQC, MultiQC, fastp, and Cutadapt. UMI-tools and fgbio for ctDNA and MRD workflows.</li>
+      <li><strong>Alignment and coverage:</strong> BWA-MEM2, STAR, minimap2, DRAGEN, and NVIDIA Parabricks. SAMtools, Picard, and mosdepth for BAM handling and coverage.</li>
+      <li><strong>Germline:</strong> GATK HaplotypeCaller, DeepVariant, DRAGEN, and bcftools.</li>
+      <li><strong>Somatic:</strong> Mutect2 in GATK 4, Strelka2, and VarDict.</li>
+      <li><strong>CNV and structural variants:</strong> CNVkit, GATK gCNV, ExomeDepth, Manta, DELLY, Sniffles2, and Pindel.</li>
+      <li><strong>RNA fusions:</strong> FusionCatcher, Arriba, and STAR-Fusion.</li>
+      <li><strong>Tumor markers and MRD:</strong> MSIsensor-pro for MSI, HRDetect for HRD, tools for TMB analysis, and LymphoTrack for MRD.</li>
+      <li><strong>Benchmarking:</strong> hap.py and Genome in a Bottle truth sets.</li>
+    </ul>
+  </div>
+  <div class="block">
+    <h2>Annotation and knowledge bases</h2>
+    <ul>
+      <li><strong>Variant annotation and prediction:</strong> Ensembl VEP, ANNOVAR, SnpEff, and SpliceAI.</li>
+      <li><strong>Databases and portals:</strong> ClinVar, gnomAD, COSMIC, OncoKB, CIViC, and cBioPortal.</li>
+      <li><strong>Pharmacogenomics:</strong> PharmGKB and CPIC guidelines.</li>
+    </ul>
+  </div>
+  <div class="block">
+    <h2>RNA expression and signature discovery</h2>
+    <ul>
+      <li><strong>Quantification:</strong> Salmon, kallisto, STAR with featureCounts, RSEM, and tximport for importing results into R.</li>
+      <li><strong>Differential expression:</strong> DESeq2, edgeR, and limma-voom. ComBat, ComBat-seq, and sva for batch correction.</li>
+      <li><strong>Pathways:</strong> GSEA and fgsea with MSigDB, clusterProfiler, and GSVA/ssGSEA.</li>
+      <li><strong>Patterns and visualization:</strong> WGCNA for co-expression modules, Mfuzz and maSigPro for time courses, and ggplot2, ComplexHeatmap, PCA, and UMAP for exploratory analysis and visualization.</li>
+      <li><strong>Other platforms and methods:</strong> limma for arrays, NanoString tools, qPCR ΔΔCt, and CIBERSORTx for cell-type deconvolution.</li>
+    </ul>
+  </div>
+  <div class="block">
+    <h2>Methylation and sequencing platforms</h2>
+    <ul>
+      <li><strong>Methylation:</strong> Bismark and methylKit for sequencing data, and minfi for methylation arrays.</li>
+      <li><strong>Sequencers:</strong> Illumina MiSeq, NextSeq 500, NextSeq 2000, and NovaSeq. Ion Torrent PGM, Proton, S5, and Genexus. Element Biosciences and Oxford Nanopore.</li>
+    </ul>
+  </div>
+
+
+  <div class="block references">
+    <h2>Posters and abstracts</h2>
+    <ul class="links">
+      <li><span class="t">A Novel Comprehensive RNA-Merging Point Targeted Assay for Clinically Actionable RNA Fusions and Aberrant RNAs in Solid Tumors</span><span class="m">AACR 2021, abstract 2238</span><span><a href="https://neogenomics.com/sites/default/files/literature/AACR_2021_Poster_2238_control_3643_final.pdf">View poster (PDF)</a></span></li>
+      <li><span class="t">An Efficient Probe Design Algorithm for Direct Fusion Targeting from RNA</span><span class="m">AACR 2021, abstract 241, poster 2640</span><span><a href="https://neogenomics.com/sites/default/files/literature/20210326_AACR_Poster_2640.pdf">View poster (PDF)</a><a href="https://doi.org/10.1158/1538-7445.AM2021-241">Published abstract</a></span></li>
+      <li><span class="t">Potential Familial Predisposition to Hematologic Neoplasm Detected Incidentally in Adult Patients Presenting with Myeloid Neoplasms</span><span class="m">ASH 2017, Blood 130 (Supplement 1): 585</span><span><a href="https://ashpublications.org/blood/article/130/Supplement%201/585/115611/Potential-Familial-Predisposition-to-Hematologic">View abstract</a></span></li>
+      <li><span class="t">Different Genomic Signatures Are Associated with Specific PD-L1/TMB Status in Lung Cancer, with Potential Value for Patient Screening for Immunotherapy</span><span class="m">AACR 2020, poster 3170 (NeoTYPE Discovery 323 panel with MSI and TMB; 874 FFPE samples)</span><span><a href="https://www.neogenomics.com/sites/default/files/literature/AACR_2020-Poster-3170-final.pdf">View poster (PDF)</a></span></li>
+      <li><span class="t">Detection of CCND1 Overexpression by RNA-Seq from TNA Samples as a Surrogate for t(11;14) Translocation in Multiple Myeloma</span><span class="m">ASH poster 2961</span><span><a href="https://cms.neogenomics.com/sites/default/files/literature/ASH%2520Abhisek.pdf">View poster (PDF)</a></span></li>
+      <li><span class="t">Accurate Prediction of Chromosome-Level CNVs from Targeted NGS</span><span class="m">ASH 2021, abstract 3994</span><span><a href="https://cms.neogenomics.com/sites/default/files/literature/ASH%2520Hyunjun%25202021.pdf">View poster (PDF)</a></span></li>
+      <li><span class="t">A Highly Sensitive and Specific Gene Fusion Algorithm Based on Multiple Fusion Callers and an Ensemble Machine Learning Approach</span><span class="m">ASH 2020, abstract 1560</span><span><a href="https://ash.confex.com/ash/2020/webprogram/Paper142020.html">View abstract</a><a href="https://www.neogenomics.com/sites/default/files/literature/ASH-2020-Presentation-Brad-Thomas.pdf">View presentation (PDF)</a></span></li>
+      <li><span class="t">A Novel Multimodal Next Generation Sequencing Assay with Total Nucleic Acid Input to Provide Comprehensive Genomic Profiling for Hematologic Malignancies</span><span class="m">ASH 2020, abstract 3379</span><span><a href="https://ash.confex.com/ash/2020/webprogram/Paper140460.html">View abstract</a></span></li>
+    </ul>
+  </div>
+
+  
+</div>
+    </main>
+    <footer class="capability-footer"><a href="./resources.html">Knowledge Library and CV</a></footer>
+  </div>
+</body>
+</html>
