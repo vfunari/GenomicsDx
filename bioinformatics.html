@@ -20,13 +20,29 @@
     <p class="intro">Hands-on pipeline engineering, benchmarking and interpretation, built to run under CAP, CLIA and FDA expectations. I have built regulated bioinformatics functions from scratch and still work in the data.</p>
   </header>
       <div class="capability-grid">
+  <div class="block featured-posters">
+    <h2>Featured posters and abstracts</h2>
+    <ul class="links">
+      <li><span class="t">A Novel Comprehensive RNA-Merging Point Targeted Assay for Clinically Actionable RNA Fusions and Aberrant RNAs in Solid Tumors</span><span class="m">AACR 2021, abstract 2238</span><span><a href="https://neogenomics.com/sites/default/files/literature/AACR_2021_Poster_2238_control_3643_final.pdf">View poster (PDF)</a></span></li>
+      <li><span class="t">An Efficient Probe Design Algorithm for Direct Fusion Targeting from RNA</span><span class="m">AACR 2021, abstract 241, poster 2640</span><span><a href="https://neogenomics.com/sites/default/files/literature/20210326_AACR_Poster_2640.pdf">View poster (PDF)</a><a href="https://doi.org/10.1158/1538-7445.AM2021-241">Published abstract</a></span></li>
+      <li><span class="t">Potential Familial Predisposition to Hematologic Neoplasm Detected Incidentally in Adult Patients Presenting with Myeloid Neoplasms</span><span class="m">ASH 2017, Blood 130 (Supplement 1): 585</span><span><a href="https://ashpublications.org/blood/article/130/Supplement%201/585/115611/Potential-Familial-Predisposition-to-Hematologic">View abstract</a></span></li>
+      <li><span class="t">Different Genomic Signatures Are Associated with Specific PD-L1/TMB Status in Lung Cancer, with Potential Value for Patient Screening for Immunotherapy</span><span class="m">AACR 2020, poster 3170 (NeoTYPE Discovery 323 panel with MSI and TMB; 874 FFPE samples)</span><span><a href="https://www.neogenomics.com/sites/default/files/literature/AACR_2020-Poster-3170-final.pdf">View poster (PDF)</a></span></li>
+      <li><span class="t">Detection of CCND1 Overexpression by RNA-Seq from TNA Samples as a Surrogate for t(11;14) Translocation in Multiple Myeloma</span><span class="m">ASH poster 2961</span><span><a href="https://cms.neogenomics.com/sites/default/files/literature/ASH%2520Abhisek.pdf">View poster (PDF)</a></span></li>
+      <li><span class="t">Accurate Prediction of Chromosome-Level CNVs from Targeted NGS</span><span class="m">ASH 2021, abstract 3994</span><span><a href="https://cms.neogenomics.com/sites/default/files/literature/ASH%2520Hyunjun%25202021.pdf">View poster (PDF)</a></span></li>
+      <li><span class="t">A Highly Sensitive and Specific Gene Fusion Algorithm Based on Multiple Fusion Callers and an Ensemble Machine Learning Approach</span><span class="m">ASH 2020, abstract 1560</span><span><a href="https://ash.confex.com/ash/2020/webprogram/Paper142020.html">View abstract</a><a href="https://www.neogenomics.com/sites/default/files/literature/ASH-2020-Presentation-Brad-Thomas.pdf">View presentation (PDF)</a></span></li>
+      <li><span class="t">A Novel Multimodal Next Generation Sequencing Assay with Total Nucleic Acid Input to Provide Comprehensive Genomic Profiling for Hematologic Malignancies</span><span class="m">ASH 2020, abstract 3379</span><span><a href="https://ash.confex.com/ash/2020/webprogram/Paper140460.html">View abstract</a></span></li>
+    </ul>
+  </div>
 
   <div class="block">
-    <h2>Featured: RNA fusion probe design algorithm</h2>
+    <h2>Featured: RNA fusion probe design and expression assays</h2>
     <ul>
       <li>Senior author on an algorithm that converts the genomic breakpoints of known fusions into RNA breakpoints and probe sequences.</li>
       <li>It scores candidate isoforms on database presence, review status, MANE, LRG and CCDS membership, transcript support level, and sequence identity with hg38, then keeps the top-scoring 5′ and 3′ pair.</li>
-      <li>Targeted capture sets for 524 and 1,632 known fusions gave 5- to 20-fold more supporting reads than whole-exome sequencing in a 12-fusion SeraSeq control, and 10- to 30-fold more in 10 clinical samples with fusions confirmed by orthogonal methods.</li>
+      <li>Targeted capture sets for 524 and 1,632 known fusions gave 5- to 20-fold more supporting reads than whole-exome capture of the transcriptome in a 12-fusion SeraSeq control, and 10- to 30-fold more in 10 clinical samples with fusions confirmed by orthogonal methods.</li>
+      <li>Reviewed a newly developed RNA-Seq gene fusion test covering MET exon 14 and EGFRvIII skipping events, and engineered new bioinformatics programs to identify fusion probes.</li>
+      <li>Built a single-cell and ultra-low-input expression pipeline from extraction through library prep, sequencing and analysis.</li>
+      <li>Showed that RNA-seq CCND1 expression from total nucleic acid can stand in for t(11;14) FISH in multiple myeloma, with an AUC of 0.87 and 75 to 81% sensitivity and 97 to 100% specificity depending on the cutoff method.</li>
     </ul>
   </div>
 
@@ -55,9 +71,6 @@
     <h2>Expression profiling</h2>
     <ul>
       <li>Analyzed gene expression for more than 700 samples in a MASH and cholesterol metabolism drug study, setting QC cutoffs, assessing outliers and validating findings.</li>
-      <li>Reviewed a newly developed RNA-Seq gene fusion test covering MET exon 14 and EGFRvIII skipping events, and engineered new bioinformatics programs to identify fusion probes.</li>
-      <li>Built a single-cell and ultra-low-input expression pipeline from extraction through library prep, sequencing and analysis.</li>
-      <li>Showed that RNA-seq CCND1 expression from total nucleic acid can stand in for t(11;14) FISH in multiple myeloma, with an AUC of 0.87 and 75 to 81% sensitivity and 97 to 100% specificity depending on the cutoff method.</li>
     </ul>
   </div>
 
@@ -74,6 +87,7 @@
   <div class="block">
     <h2>Variant interpretation and clinical reporting</h2>
     <ul>
+      <li>Launched and maintained the Imagia Canexia Health Insights Platform (ICHIP), a CE-IVD-marked clinical decision support platform. Its bioinformatics pipelines used AI to detect and analyze genomic variants, match findings to clinical interpretations, flag potential clinical trials, and generate a cancer-treatment report. <a href="https://www.businesswire.com/news/home/20220615005252/en/Imagia-Canexia-Health-Achieves-First-CE-IVD-Status-in-the-E.U.-to-Deploy-Comprehensive-Cancer-Testing-Platform">CE-IVD announcement</a>.</li>
       <li>Co-designed SiVA, the variant annotation and curation pipeline and database used for clinical and research NGS.</li>
       <li>Built regulated bioinformatics functions under CLIA and FDA expectations, with pipeline validation and quality standards.</li>
       <li>Integrated digital reporting for clinicians into urine-based RNA/DNA liquid biopsy launches.</li>
@@ -128,19 +142,7 @@
   </div>
 
 
-  <div class="block references">
-    <h2>Posters and abstracts</h2>
-    <ul class="links">
-      <li><span class="t">A Novel Comprehensive RNA-Merging Point Targeted Assay for Clinically Actionable RNA Fusions and Aberrant RNAs in Solid Tumors</span><span class="m">AACR 2021, abstract 2238</span><span><a href="https://neogenomics.com/sites/default/files/literature/AACR_2021_Poster_2238_control_3643_final.pdf">View poster (PDF)</a></span></li>
-      <li><span class="t">An Efficient Probe Design Algorithm for Direct Fusion Targeting from RNA</span><span class="m">AACR 2021, abstract 241, poster 2640</span><span><a href="https://neogenomics.com/sites/default/files/literature/20210326_AACR_Poster_2640.pdf">View poster (PDF)</a><a href="https://doi.org/10.1158/1538-7445.AM2021-241">Published abstract</a></span></li>
-      <li><span class="t">Potential Familial Predisposition to Hematologic Neoplasm Detected Incidentally in Adult Patients Presenting with Myeloid Neoplasms</span><span class="m">ASH 2017, Blood 130 (Supplement 1): 585</span><span><a href="https://ashpublications.org/blood/article/130/Supplement%201/585/115611/Potential-Familial-Predisposition-to-Hematologic">View abstract</a></span></li>
-      <li><span class="t">Different Genomic Signatures Are Associated with Specific PD-L1/TMB Status in Lung Cancer, with Potential Value for Patient Screening for Immunotherapy</span><span class="m">AACR 2020, poster 3170 (NeoTYPE Discovery 323 panel with MSI and TMB; 874 FFPE samples)</span><span><a href="https://www.neogenomics.com/sites/default/files/literature/AACR_2020-Poster-3170-final.pdf">View poster (PDF)</a></span></li>
-      <li><span class="t">Detection of CCND1 Overexpression by RNA-Seq from TNA Samples as a Surrogate for t(11;14) Translocation in Multiple Myeloma</span><span class="m">ASH poster 2961</span><span><a href="https://cms.neogenomics.com/sites/default/files/literature/ASH%2520Abhisek.pdf">View poster (PDF)</a></span></li>
-      <li><span class="t">Accurate Prediction of Chromosome-Level CNVs from Targeted NGS</span><span class="m">ASH 2021, abstract 3994</span><span><a href="https://cms.neogenomics.com/sites/default/files/literature/ASH%2520Hyunjun%25202021.pdf">View poster (PDF)</a></span></li>
-      <li><span class="t">A Highly Sensitive and Specific Gene Fusion Algorithm Based on Multiple Fusion Callers and an Ensemble Machine Learning Approach</span><span class="m">ASH 2020, abstract 1560</span><span><a href="https://ash.confex.com/ash/2020/webprogram/Paper142020.html">View abstract</a><a href="https://www.neogenomics.com/sites/default/files/literature/ASH-2020-Presentation-Brad-Thomas.pdf">View presentation (PDF)</a></span></li>
-      <li><span class="t">A Novel Multimodal Next Generation Sequencing Assay with Total Nucleic Acid Input to Provide Comprehensive Genomic Profiling for Hematologic Malignancies</span><span class="m">ASH 2020, abstract 3379</span><span><a href="https://ash.confex.com/ash/2020/webprogram/Paper140460.html">View abstract</a></span></li>
-    </ul>
-  </div>
+  
 
   
 </div>

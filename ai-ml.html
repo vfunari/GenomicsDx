@@ -20,13 +20,23 @@
     <p class="intro">Machine learning earns its place in a clinical lab when it can be validated, released and defended. I have put ML into production genomic pipelines and led the teams that run them.</p>
   </header>
       <div class="capability-grid">
+  <div class="block featured-posters">
+    <h2>Featured posters and abstracts</h2>
+    <ul class="links">
+      <li><span class="t">An Efficient Probe Design Algorithm for Direct Fusion Targeting from RNA</span><span class="m">AACR 2021, abstract 241, poster 2640 (algorithmic probe design for fusion targeting)</span><span><a href="https://neogenomics.com/sites/default/files/literature/20210326_AACR_Poster_2640.pdf">View poster (PDF)</a><a href="https://doi.org/10.1158/1538-7445.AM2021-241">Published abstract</a></span></li>
+      <li><span class="t">A Novel Comprehensive RNA-Merging Point Targeted Assay for Clinically Actionable RNA Fusions and Aberrant RNAs in Solid Tumors</span><span class="m">AACR 2021, abstract 2238 (solid-tumor RNA fusion assay using three callers and a machine-learning step)</span><span><a href="https://neogenomics.com/sites/default/files/literature/AACR_2021_Poster_2238_control_3643_final.pdf">View poster (PDF)</a></span></li>
+      <li><span class="t">A Highly Sensitive and Specific Gene Fusion Algorithm Based on Multiple Fusion Callers and an Ensemble Machine Learning Approach</span><span class="m">ASH 2020, abstract 1560</span><span><a href="https://ash.confex.com/ash/2020/webprogram/Paper142020.html">View abstract</a><a href="https://www.neogenomics.com/sites/default/files/literature/ASH-2020-Presentation-Brad-Thomas.pdf">View presentation (PDF)</a></span></li>
+      <li><span class="t">Chromosome-level CNV prediction from targeted NGS</span><span class="m">ASH 2021 · Poster 3994</span><span><a href="https://cms.neogenomics.com/sites/default/files/literature/ASH%2520Hyunjun%25202021.pdf">View poster (PDF)</a></span></li>
+      <li><span class="t">A Novel Multimodal Next Generation Sequencing Assay with Total Nucleic Acid Input to Provide Comprehensive Genomic Profiling for Hematologic Malignancies</span><span class="m">ASH 2020, abstract 3379</span><span><a href="https://ash.confex.com/ash/2020/webprogram/Paper140460.html">View abstract</a></span></li>
+    </ul>
+  </div>
 
   <div class="block">
     <h2>Featured: gene fusion machine learning algorithm</h2>
     <ul>
       <li>Supervised the lead scientist and co-developed a random-forest ensemble that combines multiple RNA-seq fusion callers to classify true gene fusions from RNA-seq.</li>
       <li>Features included whether each caller detected the fusion, coverage balance on each side of the breakpoint, and the number of reads crossing the breakpoint.</li>
-      <li>Built in R with randomForest and tuned with caret, using a hyperparameter results table and F1 scoring. Trained on calls confirmed by manual review, PCR, Sanger sequencing and Archer.</li>
+      <li>Built in R with randomForest and tuned with caret, using a hyperparameter results table and F1 scoring. Trained on calls confirmed by manual review, PCR, Sanger sequencing, Archer, FISH, and cytogenetics data.</li>
       <li>Validated by 10-fold cross-validation on 598 fusion calls. It outperformed a simple &quot;n of five callers agree&quot; rule, most of all in specificity.</li>
       <li>Feature importance showed Kallisto and pizzly contributed nothing, so the caller could be dropped to save compute.</li>
     </ul>
@@ -67,9 +77,9 @@
   <div class="block">
     <h2>Clinical decision support and reporting</h2>
     <ul>
+      <li>Launched and maintained the Imagia Canexia Health Insights Platform (ICHIP), a CE-IVD-marked clinical decision support platform. Its bioinformatics pipelines used AI to detect and analyze genomic variants, match findings to clinical interpretations, flag potential clinical trials, and generate a cancer-treatment report. <a href="https://www.businesswire.com/news/home/20220615005252/en/Imagia-Canexia-Health-Achieves-First-CE-IVD-Status-in-the-E.U.-to-Deploy-Comprehensive-Cancer-Testing-Platform">CE-IVD announcement</a>.</li>
       <li>Co-designed SiVA, a clinical and research NGS variant annotation and curation pipeline and database.</li>
       <li>Built NEOSEQ, an external-facing bioinformatics platform with a graphical interface for secure interpretation and release.</li>
-      <li>Secured the CE-IVD mark for bioinformatics pipelines, cloud and reporting infrastructure.</li>
       <li>Brought together Quebec academic medical centers to standardize MRI feature detection with AI, training algorithms across different datasets.</li>
     </ul>
   </div>
@@ -85,16 +95,7 @@
     </ul>
   </div>
 
-  <div class="block references">
-    <h2>Posters and abstracts</h2>
-    <ul class="links">
-      <li><span class="t">An Efficient Probe Design Algorithm for Direct Fusion Targeting from RNA</span><span class="m">AACR 2021, abstract 241, poster 2640 (algorithmic probe design for fusion targeting)</span><span><a href="https://neogenomics.com/sites/default/files/literature/20210326_AACR_Poster_2640.pdf">View poster (PDF)</a><a href="https://doi.org/10.1158/1538-7445.AM2021-241">Published abstract</a></span></li>
-      <li><span class="t">A Novel Comprehensive RNA-Merging Point Targeted Assay for Clinically Actionable RNA Fusions and Aberrant RNAs in Solid Tumors</span><span class="m">AACR 2021, abstract 2238 (solid-tumor RNA fusion assay using three callers and a machine-learning step)</span><span><a href="https://neogenomics.com/sites/default/files/literature/AACR_2021_Poster_2238_control_3643_final.pdf">View poster (PDF)</a></span></li>
-      <li><span class="t">A Highly Sensitive and Specific Gene Fusion Algorithm Based on Multiple Fusion Callers and an Ensemble Machine Learning Approach</span><span class="m">ASH 2020, abstract 1560</span><span><a href="https://ash.confex.com/ash/2020/webprogram/Paper142020.html">View abstract</a><a href="https://www.neogenomics.com/sites/default/files/literature/ASH-2020-Presentation-Brad-Thomas.pdf">View presentation (PDF)</a></span></li>
-      <li><span class="t">Chromosome-level CNV prediction from targeted NGS</span><span class="m">ASH 2021 · Poster 3994</span><span><a href="https://cms.neogenomics.com/sites/default/files/literature/ASH%2520Hyunjun%25202021.pdf">View poster (PDF)</a></span></li>
-      <li><span class="t">A Novel Multimodal Next Generation Sequencing Assay with Total Nucleic Acid Input to Provide Comprehensive Genomic Profiling for Hematologic Malignancies</span><span class="m">ASH 2020, abstract 3379</span><span><a href="https://ash.confex.com/ash/2020/webprogram/Paper140460.html">View abstract</a></span></li>
-    </ul>
-  </div>
+  
 
   
 <div class="block references"><h2>Related research and presentations</h2><ul class="links"><li><a href="https://www.cancergenomics.org/meetings/2023_scientific_program.php">Machine learning method for identifying MSI DNA samples without matched normal</a><span class="m">CGC 2023 · Presentation by Vincent Funari</span></li><li><a href="https://doi.org/10.1158/1538-7445.AM2023-4279">Method for identifying microsatellite instability high DNA abnormality samples</a><span class="m">AACR 2023 · Related Imagia Canexia Health team abstract 4279</span></li></ul></div></div>
