@@ -50,3 +50,12 @@
 
 /* Bioinformatics intro runs the full width of the box below */
 .capability-intro.wide p { max-width: none; }
+
+/* Compact related research and presentations blocks */
+.capability-grid .compact-refs { padding: .6rem .8rem; }
+.compact-refs h2 { font-size: 1rem; margin-bottom: .3rem; }
+.capability-grid .compact-refs .links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .25rem 1rem; }
+.capability-grid .compact-refs .links li { padding-block: .3rem; gap: .1rem; font-size: .82rem; line-height: 1.35; }
+.capability-grid .compact-refs .links .m { font-size: .75rem; }
+@media (max-width: 60rem) { .capability-grid .compact-refs .links { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 45rem) { .capability-grid .compact-refs .links { grid-template-columns: 1fr; } }
