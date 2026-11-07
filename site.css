@@ -27,3 +27,7 @@ footer > .absolute.bottom-0 { display: none !important; }
 footer ul.space-y-4 { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .75rem 2rem; }
 footer ul.space-y-4 > li { margin: 0 !important; }
 footer ul.space-y-4 p.mb-3 { max-width: 17rem; }
+
+/* Contact: email link only */
+footer ul.space-y-4 > li:nth-child(n+2) { display: none !important; }
+footer ul.space-y-4 p.mb-3 { display: none !important; }
