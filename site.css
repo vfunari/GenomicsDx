@@ -18,3 +18,7 @@ footer ul.space-y-4 > li:first-child { margin-top: 0 !important; }
 footer ul.space-y-4 p.mb-3 { margin-bottom: .4rem !important; }
 footer ul.space-y-4 button { padding: .3rem .75rem !important; }
 @media (max-width: 48rem) { footer .grid { grid-template-columns: 1fr !important; } }
+
+/* No dividing lines at the bottom of the footer */
+footer .border-t.pt-4 { border-top: 0 !important; padding-top: 0 !important; }
+footer > .absolute.bottom-0 { display: none !important; }
