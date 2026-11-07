@@ -22,3 +22,8 @@ footer ul.space-y-4 button { padding: .3rem .75rem !important; }
 /* No dividing lines at the bottom of the footer */
 footer .border-t.pt-4 { border-top: 0 !important; padding-top: 0 !important; }
 footer > .absolute.bottom-0 { display: none !important; }
+
+/* Location beside the email block */
+footer ul.space-y-4 { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .75rem 2rem; }
+footer ul.space-y-4 > li { margin: 0 !important; }
+footer ul.space-y-4 p.mb-3 { max-width: 17rem; }
